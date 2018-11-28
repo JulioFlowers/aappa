@@ -1,0 +1,258 @@
+
+@font-face{
+    font-family: 'Amaranth Bold';
+    src: url('Fonts/Amaranth-Bold.ttf');
+
+}
+
+@font-face{
+    font-family: 'Amaranth';
+    src: url('Fonts/Amaranth-Regular.ttf');
+
+}
+
+@font-face{
+    font-family: 'Palanquin Regular';
+    src: url('Fonts/palanquin-regular.ttf');
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+#main{
+    height: 100%;
+    width: 100%;
+    background-image: url("IMG-20181127-WA0017.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+    color:  rgba(255, 255, 255, 0.9);
+}
+
+.etext{
+    position: absolute;
+    top: 10%;
+    bottom: 60%;
+    left: 40%;
+    right: 36%;
+}
+
+.mp1{
+    font-size: 156px;
+    font-size-adjust: inherit;
+    font-family: 'Amaranth Bold';
+}
+
+.mp25{
+    font-size: 54px;
+    font-size-adjust: inherit;
+    font-family: 'Amaranth Bold';
+    color: white;
+}
+
+.mp2{
+    font-size: 36px;
+    font-size-adjust: inherit;
+    font-family: 'Amaranth Bold';
+    border: 4px;
+}
+
+.mp3{
+    font-size: 26px;
+    font-size-adjust: inherit;
+    font-family: 'Palanquin Regular';
+    border: 4px;
+}
+
+.mp35{
+    font-size: 26px;
+    font-size-adjust: inherit;
+    font-family: 'Palanquin Regular';
+    border: 4px;
+    color: white;
+}
+
+.mp4{
+    font-size: 16px;
+    font-size-adjust: inherit;
+    font-family: 'Palanquin Regular';
+    border: 4px;
+}
+
+.introtext{
+    font-size: 26px;
+    font-size-adjust: inherit;
+    font-family: 'Amaranth';
+}
+
+.ibutton{
+    font-size: 18px;
+    font-size-adjust: inherit;
+    font-family: 'Palanquin Regular';
+}
+
+#data{
+    height: 100%;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+.navbar li{
+    float: left;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+    background-color: #111;
+}
+
+footer{
+    font-family: "Palanquin Regular";
+    font-size: 14px;
+    text-align: center;
+    outline: none;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    width: 100%;
+}
+
+.proyectv{
+    height: 30%;
+    width: 100%;
+    background-image: url("IMG-20181127-WA0016.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.proyectv:hover {
+    height: 75%;
+}
+
+.eimage{
+    background-image: url("130115-009.jpg");
+    width: 100%;
+    height: 42%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.edata{
+    background-color: transparent;
+}
+
+.rfoot{
+    text-align: right;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.proyectvc{
+    height: 40%;
+    width: 100%;
+    background-image: url("IMG-20181127-WA0015.png");
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.proyectvc:hover {
+    height: 70%;
+}
+
+.proyecta{
+    height: 40%;
+    width: 100%;
+    background-image: url("IMG-20181128-WA0001.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.proyecta:hover {
+    height: 70%;
+}
+
+.proyectc{
+    height: 40%;
+    width: 100%;
+    background-image: url("IMG-20181128-WA0000.jpg");
+    background-repeat: no-repeat; 
+    background-size: cover;
+}
+.proyectc:hover {
+    height: 70%;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AAPA &ndash; Inicio. </title>
+    <link rel="stylesheet" href="css/main.css" integrity="sha384-" crossorigin="anonymous">
+
+    <script>
+        function mainpage() {
+    var x = document.getElementById("main");
+    var y = document.getElementById("data");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+        y.style.display = "block";
+    } else {
+        x.style.display = "block";
+        y.style.display = "none";
+    }
+} 
+    </script>
+
+</head>
+<body>
+     <div id="main" style="display:block;"> 
+         <div class="etext"> 
+            <p align="center"> <img src="images/famoussewhite.png" width="100px" height="100px"> <br>
+         <span class="mp1">AAPA </span></p>
+            <p align="justify"><span class="introtext">Bienvenido a la página web de la Asociación de Alumnos de Plantel Azteca, <br> 
+                te invitamos a conocer los proyectos en pie, y involucrarte en estos problemas de actualidad. 
+                .</span></p>
+            <p align="center" class="ibutton"><a onClick="mainpage()"> Conoce más.<br> <img src="images/small-right-arrow-icon-64993.png" width="70px" height="70px" alt="click para saber mas" /> </a> </p>       
+         </div>
+     </div>  
+
+     <div id="data" style="display:none;"> 
+        <header class="navbar">
+            <ul>
+                <li><a href="/">AAPA</a></li>
+                <li><a href="/about">¿Quienes Somos?</a></li>
+                <li><a href="/#pi">Proyectos</a></li>
+                <li><a href="/contact">Contacto</a></li>
+              </ul> 
+        </header>
+
+        <div class="eimage">
+            <p class="mp25" align="left"> ¿Quiénes somos?  <br> </p>
+            <p class="mp35" align="center">Somos un grupo de alumnos preocupados por la sociedad estudiantil, el medio ambiente <br> 
+                y la manera de convivir dentro de la preparatoria. Es por esto que hemos decidido hacer el cambio. 
+            </p>
+        </div>
+
+        <br>
+
+        <div>
+            <p align="center"> 
+                <span class="mp2">Inicia sesion y conoce tus notas</span>
+                <form action="/login" method="post" class="mbox">
+                    <label for="user"><b>Username</b></label> <br>
+                    <input type="text" placeholder="Introduce Usuario" name="user" required> <br>
+
+                    <label for="password"><b>Password</b></label> <br>
+                    <input type="password" placeholder="Introduce contraseña" name="password" required> <br>
+
+                    <button type="submit">Inicia Sesion</button>
+                </form>
+            </p>
+        </div>
+
+        <div>
+            <p id="pi" class="mp2">Proyectos Insignia</p>
+            <div> <p align="center"><a href="/arboles"><img src="css/IMG-20181127-WA0016.jpg"  width="150px" height="150px"></a> <br> <span class="mp3">Arboles</span> <br> <span class="mp4">Recuperacion de espacios</span></p></div>
+            <div> <p align="center"> <a href="/chamarras"><img src="css/IMG-20181127-WA0014.jpg" width="150px" height="150px"></a> <br> <span class="mp3">Chamarras</span> <br> <span class="mp4" >Identidad con el plantel.</span></p></div>
+        </div>
+
+
+
+        <footer>AAPA diseñadores y asociados 2018</footer>
+     </div>
+</body> 
+</html>
