@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AAPA Signup</title>
+<title>AAPA Please fill this data</title>
 <link href="css/main.css" rel="stylesheet">
 <style>
 	body, html{
@@ -46,23 +46,28 @@
 	<div id="mbox">
     <div class="mbox">
 		
-		<form action="/signup" method="post" class="mbox">
+		<form action="/platform" method="put" class="mbox">
 			<br>
-			<div> <h4 align="center">Bienvenido. </h4></div>
+			<div> <h4 align="center"> Necesitamos algunos datos mas. </h4></div>
 			
 			<div class="form-group">
-		      <label>Nombre de Usuario.</label>
-		      <input type="text" class="form-control" name="email" placeholder="Debe de ser unico" required>
+		      <label>Nombre Completo.</label>
+		      <input type="text" class="form-control" name="nombre" placeholder="Empiece por apellidos" required>
 		      </div>
 			
 		    <div class="form-group">
-		      <label>Contraseña.</label>
-		      <input type="password" class="form-control" name="password" placeholder="Procura que sea segura." required>
-	        </div>
-			  <p>Si tienes una cuenta haz click <a href="/">aquí.</a><br>
-			</p>
-			 
-		    <p align="center"><button type="submit" class="btn btn-primary">Registrate.</button></p>
+		      <label>Ingrese grupo de 1er semeste.</label>
+		      <input type="number" class="form-control" name="grupo1" placeholder="eg. 112" required>
+			</div>	 
+			<div class="form-group">
+				<label>Ingrese grupo de 3er semeste.</label>
+				<input type="number" class="form-control" name="grupo3" placeholder="eg. 312" required>
+			  </div>	 
+			  <div class="form-group">
+				<label>Ingrese grupo de 5to semeste.</label>
+				<input type="number" class="form-control" name="grupo5" placeholder="eg. 512" required>
+			  </div>	 
+		    <p align="center"><button type="submit" class="btn btn-primary">Vamos a la plataforma.</button></p>
 			 <br>
         </form>
         
