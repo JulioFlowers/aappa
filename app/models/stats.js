@@ -3,6 +3,7 @@
 var mongoose = require('mongoose');
 
 var statSchema = mongoose.Schema({
+"user": String,
 "nombre": String,
 
         "grupo1": Number,

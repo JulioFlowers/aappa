@@ -5,14 +5,19 @@ var bcrypt = require('bcrypt-nodejs');
 
 var userSchema = mongoose.Schema({
 	
-	"user": String,
+	local            : {
+        email       : String,
+        password     : String,
+	},
+	
 	"nombre": String,
 	"grupoac": Number,
 	"sac": String,
 	"promedio": Number,
 	"avance": Number,
-	"password": String,
 });
+
+//Criptografico tipo hash.
 
 //Criptografico tipo hash.
 

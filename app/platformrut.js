@@ -5,6 +5,7 @@
 var mongoose = require('mongoose');
 var user = require('./models/user');
 var Stat = require('./models/stats');
+require('./../config/passport');
 
 module.exports = (app, passport, bodyParser) => {
 
@@ -39,14 +40,12 @@ module.exports = (app, passport, bodyParser) => {
     }));
 
 	app.get('/platform', isLoggedIn, function (req, res) {
-		
-		var id = req.user.nombre;
-		var cn = req.stats.nombre;
-
-        
-		stat.findOne({user:id}, function (err, data) {
-			res.render('platform.ejs', { user: req.user, stats: data });
+		var id = req.user.user;
+		var cu = req.user.user;
+		Stat.findOne({cu:id}, function (err, data) {
+				res.render('platform.ejs', { user: req.user, stats: data });	
 		});
+		
 	});
 	
 	

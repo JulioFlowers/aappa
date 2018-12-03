@@ -54,18 +54,21 @@
         <br>
 
         <div>
-            <p align="center"> 
-                <span class="mp2">Inicia sesion y conoce tus notas</span>
-                <form action="/login" method="post" class="mbox">
-                    <label for="user"><b>Username</b></label> <br>
-                    <input type="text" placeholder="Introduce Usuario" name="user" required> <br>
-
-                    <label for="password"><b>Password</b></label> <br>
-                    <input type="password" placeholder="Introduce contraseña" name="password" required> <br>
-
-                    <button type="submit">Inicia Sesion</button>
-                </form>
-            </p>
+            <form action="/login" method="post" class="col-lg-4 offset-lg-4" >  
+                <div class="form-group">
+                  <label>Usuario.</label>
+                  <input type="text" class="form-control" name="email" placeholder="Introduce tu Usuario" required>
+                  </div>
+                  
+                <div class="form-group">
+                  <label>Contraseña.</label>
+                  <input type="password" class="form-control" name="password" placeholder="Introduce tu contraseña." required>
+                </div>
+                  <p>Si no tienes una cuenta haz click <a href="/signup">aquí.</a></p>
+                  <br>
+                <p align="center"><button type="submit" class="btn btn-primary">Iniciar Sesion.</button></p>
+                  
+              </form>
         </div>
 
         <div>

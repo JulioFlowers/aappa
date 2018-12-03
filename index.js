@@ -19,13 +19,12 @@ var bodyParser   = require('body-parser');
 var session      = require('express-session');
 var passportlocal = require('passport-local');
 
-//root
-app.use(express.static(path.resolve(__dirname, 'public')));
-
 mongoose.connect(odb.url, { useNewUrlParser: true })      //coneccion a BD.
 var db = mongoose.connection; // comunicacion con la BD.
 
 require('./config/passport')(passport); // Configuracion del passport.
+
+app.use(express.static(path.resolve(__dirname, 'public')));
 
 // configurar app.
 app.use(morgan('dev'));   // Registrar todo incio de sesion en la consola.
